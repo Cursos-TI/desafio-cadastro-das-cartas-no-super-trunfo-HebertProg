@@ -38,9 +38,9 @@ int main(){
     printf("Digite o numero de pontos turísticos: ");//A quantidade de pontos turísticos na cidade. Tipo: int
     scanf(" %d",&pontos_turisticos);//Leitura a quatidade de pontos turisticos inseridos pelo usuário
 
-    pib_Perca1 = (float)pib/populacao;// Divisão da 
+    pib_Perca1 = (float)pib/populacao;// Divisão da renda per capita 
     
-    densi_popula1 = (float)populacao/km_cidade;
+    densi_popula1 = (float)populacao/km_cidade;//divisão da densidade populacional
 
     printf("\n**********RESULTADOS**********\n\n");
 
@@ -58,9 +58,9 @@ int main(){
 
     printf("Número de pontos turísticos: %d \n", pontos_turisticos); //Impressão na tela da variável 7 - Quantidades de Pontos Turisticos
 
-    printf("PIB per Capita : %.2f reais\n",pib_Perca1);//Impressão na tela da variável 8 - PIB percapita
+    printf("PIB per Capita : %.2f reais\n",pib_Perca1);//Impressão na tela da variável 8 - PIB percapita 1
 
-    printf("Densidade Populacional: %.2f hab/km² \n\n", densi_popula1);//Impressão na tela da variável 9 - Densidade populacional 
+    printf("Densidade Populacional: %.2f hab/km² \n\n", densi_popula1);//Impressão na tela da variável 9 - Densidade populacional 1
 
 
     printf("*****CARTA 02***** \n\n");
@@ -86,9 +86,9 @@ int main(){
     printf("Digite o numero de pontos turísticos: ");//A quantidade de pontos turísticos na cidade. Tipo: int
     scanf(" %d",&pontos_turisticos);//Leitura a quatidade de pontos turisticos inseridos pelo usuário
 
-    pib_Perca2 = (float)pib/populacao;// Divisão da 
+    pib_Perca2 = (float)pib/populacao;// Divisão do pib per capita carta 2
     
-    densi_popula2 = (float)populacao/km_cidade;
+    densi_popula2 = (float)populacao/km_cidade;//divisão da densidade populacional carta 2
 
     printf("\n**********RESULTADOS**********\n\n");
 
@@ -106,9 +106,9 @@ int main(){
 
     printf("Número de pontos turísticos: %d \n", pontos_turisticos); //Impressão na tela da variável 7 - Quantidades de Pontos Turisticos
 
-    printf("PIB per Capita : %.2f reais\n",pib_Perca2);//Impressão na tela da variável 8 - PIB percapita
+    printf("PIB per Capita : %.2f reais\n",pib_Perca2);//Impressão na tela da variável 8 - PIB percapita 2
 
-    printf("Densidade Populacional: %.2f hab/km² ", densi_popula2);//Impressão na tela da variável 9 - Densidade populacional 
+    printf("Densidade Populacional: %.2f hab/km² ", densi_popula2);//Impressão na tela da variável 9 - Densidade populacional 2
 
 
     return 0 ;
