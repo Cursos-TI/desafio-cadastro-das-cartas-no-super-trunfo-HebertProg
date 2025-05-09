@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 int main(){
-
-
     char inicial;//Variável 1 - Uma letra de 'A' a 'H' (representando um dos oito estados). Tipo: char
     char codigo_carta[4]; //Variavel 2 - A letra do estado seguida de um número de 01 a 04 (ex: A01, B03). Tipo: char[] (um array de caracteres, ou string)
     char nome_cidade[10];//Variavel 3 - O nome da cidade. Tipo: char[] (string)
@@ -10,6 +8,10 @@ int main(){
     float km_cidade;// Variavel 5 - A área da cidade em quilômetros quadrados. Tipo: float
     float pib;// Variavel 6 - O Produto Interno Bruto da cidade. Tipo: float
     int pontos_turisticos;// Variavel 7 - A quantidade de pontos turísticos na cidade. Tipo: int
+    float pib_Perca1;//Variavel 8 - irá armazenar a divisão das variáveis (PIB/POPULACAO)
+    float densi_popula1;//Variável 9 - irpa armazenar o resultado da divisão das variáveis (Populacao/km_cidade)
+    float pib_Perca2;//Variavel 8 - irá armazenar a divisão das variáveis (PIB/POPULACAO)
+    float densi_popula2;//Variável 9 - irá armazenar o resultado da divisão das variáveis (Populacao/km_cidade)
 
     printf("==========Bem-vindo Super Trunfo de Países==========\n\n"); // Texto de identificação de apresentação da primeira carta !
 
@@ -36,7 +38,11 @@ int main(){
     printf("Digite o numero de pontos turísticos: ");//A quantidade de pontos turísticos na cidade. Tipo: int
     scanf(" %d",&pontos_turisticos);//Leitura a quatidade de pontos turisticos inseridos pelo usuário
 
-    printf("**********RESULTADOS**********\n");
+    pib_Perca1 = (float)pib/populacao;// Divisão da 
+    
+    densi_popula1 = (float)populacao/km_cidade;
+
+    printf("\n**********RESULTADOS**********\n\n");
 
     printf("Estado: %c\n",inicial);//Impressão na tela da variável 1 - Inicial do estado 
 
@@ -50,10 +56,14 @@ int main(){
 
     printf("PIB: R$ %.2f \n", pib);//Impressão na tela da variável 6 - PIB
 
-    printf("Número de pontos turísticos: %d \n\n\n", pontos_turisticos); //Impressão na tela da variável 7 - Quantidades de Pontos Turisticos
+    printf("Número de pontos turísticos: %d \n", pontos_turisticos); //Impressão na tela da variável 7 - Quantidades de Pontos Turisticos
+
+    printf("PIB per Capita : %.2f reais\n",pib_Perca1);//Impressão na tela da variável 8 - PIB percapita
+
+    printf("Densidade Populacional: %.2f hab/km² \n\n", densi_popula1);//Impressão na tela da variável 9 - Densidade populacional 
 
 
-    printf("*****CARTA 02*****\n");
+    printf("*****CARTA 02***** \n\n");
 
     printf("Digite a Primeira letra do Estado: ");// Usuário irá inserir o a letra do estado 
     scanf(" %c", &inicial);//Leitura da letra inicial do estado, pela funcção scanf . essa leitura será jogada para a variavel 1 
@@ -76,8 +86,11 @@ int main(){
     printf("Digite o numero de pontos turísticos: ");//A quantidade de pontos turísticos na cidade. Tipo: int
     scanf(" %d",&pontos_turisticos);//Leitura a quatidade de pontos turisticos inseridos pelo usuário
 
+    pib_Perca2 = (float)pib/populacao;// Divisão da 
+    
+    densi_popula2 = (float)populacao/km_cidade;
 
-    printf("**********RESULTADOS**********\n");
+    printf("\n**********RESULTADOS**********\n\n");
 
     printf("Estado: %c\n",inicial);//Impressão na tela da variável 1 - Inicial do estado 
 
@@ -93,5 +106,11 @@ int main(){
 
     printf("Número de pontos turísticos: %d \n", pontos_turisticos); //Impressão na tela da variável 7 - Quantidades de Pontos Turisticos
 
-    return 0;
+    printf("PIB per Capita : %.2f reais\n",pib_Perca2);//Impressão na tela da variável 8 - PIB percapita
+
+    printf("Densidade Populacional: %.2f hab/km² ", densi_popula2);//Impressão na tela da variável 9 - Densidade populacional 
+
+
+    return 0 ;
+    
 }
